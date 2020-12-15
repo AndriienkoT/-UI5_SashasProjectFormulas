@@ -1,0 +1,66 @@
+.pageMain {
+  background-image: url("../images/background.png");
+  opacity: 0.6;
+  background-size: cover;
+}
+
+.pageStandard .sapContrast.sapTntSideNavigation {
+background: transparent;
+  border-right: 0;
+}
+
+.customHeader.sapContrast.sapTntToolHeader.sapMTB,
+.customHeader.sapTntToolHeader.sapMTB {
+  background-color: transparent;
+  border: 0;
+}
+
+
+
+
+
+
+
+.flip {
+  -webkit-perspective: 800;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 50px auto;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(180deg);
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 3s;
+}
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+  font-family: Georgia;
+  font-size: 3em;
+  text-align: center;
+  line-height: 200px;
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotatey(180deg);
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+  background: blue;
+  background: white;
+  color: black;
+  cursor: pointer;
+}

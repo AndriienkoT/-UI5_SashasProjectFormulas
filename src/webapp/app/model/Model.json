@@ -1,0 +1,67 @@
+{
+  "navigation": [
+    {
+      "navigationListItem": "Главная",
+      "icon": "sap-icon://person-placeholder",
+      "routTo": "main"
+    },
+    {
+      "navigationListItem": "Класс",
+      "icon": "sap-icon://person-placeholder",
+      "navigationListSubItems": [
+        {
+          "title": "7",
+          "routTo": "class"
+        },
+        {
+          "title": "8",
+          "routTo": "class"
+        }
+      ]
+    },
+    {
+      "navigationListItem": "Раздел",
+      "icon": "sap-icon://person-placeholder",
+      "navigationListSubItems": [
+        {
+          "title": "",
+          "routTo": "chapter"
+        },
+        {
+          "title": "",
+          "routTo": "chapter"
+        }
+      ]
+    },
+    {
+      "navigationListItem": "O сайте",
+      "icon": "sap-icon://person-placeholder",
+      "routTo": "aboutWebsite"
+    }
+  ],
+  "classVar": "",
+  "chapterVar": "",
+  "formulas": [
+    {
+      "id": 0,
+      "name": "A",
+      "formula": "formulaA",
+      "class": "7",
+      "chapter": "chaperA"
+    },
+    {
+      "id": 1,
+      "name": "B",
+      "formula": "formulaB",
+      "class": "8",
+      "chapter": "chaperB"
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "formula": "formulaC",
+      "class": "8",
+      "chapter": "chaperA"
+    }
+  ]
+}

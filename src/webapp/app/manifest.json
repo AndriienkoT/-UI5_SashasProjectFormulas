@@ -1,0 +1,129 @@
+{
+  "_version": "0.0.1",
+  "sap.app": {
+    "_version": "0.0.1",
+    "id": "SashasProject",
+    "type": "application",
+    "title": "Formulas",
+    "description": "",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "embeds": []
+  },
+  "sap.ui": {
+    "_version": "1.50.7",
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "0.0.1",
+    "rootView": {
+      "viewName": "SashasProject.view.App",
+      "type": "XML",
+      "id": "app",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.58",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      },
+      "components": {}
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "Model": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/Model.json",
+        "preload": true
+      }
+    },
+    "resources": {
+      "css": [
+        {
+		      "uri": "css/style.css"
+		    }
+      ],
+      "js": [
+
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "SashasProject.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "transition": "slide",
+        "homeRoute": "main",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "main",
+          "target": "main"
+        },
+        {
+          "pattern": "class",
+          "name": "class",
+          "target": "class"
+        },
+        {
+          "pattern": "chapter",
+          "name": "chapter",
+          "target": "chapter"
+        },
+        {
+          "pattern": "aboutWebsite",
+          "name": "aboutWebsite",
+          "target": "aboutWebsite"
+        }
+      ],
+      "targets": {
+        "main": {
+          "viewId": "main",
+          "viewName": "Main",
+          "viewLevel": 1
+        },
+        "class": {
+          "viewId": "class",
+          "viewName": "Class",
+          "viewLevel": 1
+        },
+        "chapter": {
+          "viewId": "chapter",
+          "viewName": "Chapter",
+          "viewLevel": 1
+        },
+        "aboutWebsite": {
+          "viewId": "aboutWebsite",
+          "viewName": "AboutWebsite",
+          "viewLevel": 1
+        }
+      }
+    }
+  }
+}
