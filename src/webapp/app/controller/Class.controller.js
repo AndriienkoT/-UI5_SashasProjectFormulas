@@ -18,8 +18,6 @@ sap.ui.define([
       oBinding.filter([
           new sap.ui.model.Filter("class", sap.ui.model.FilterOperator.Contains, sQuery)
       ]);
-
-
     },
 
     onPress: function(oEvent) {

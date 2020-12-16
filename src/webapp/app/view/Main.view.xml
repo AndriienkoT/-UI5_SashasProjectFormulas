@@ -2,6 +2,7 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:tnt="sap.tnt"
+  xmlns:l="sap.ui.layout"
   controllerName="SashasProject.controller.App" width="100%" height="100%"
   displayBlock="true">
 
@@ -16,13 +17,27 @@
       <tnt:SideNavigation id="sideNavigation" >
         <tnt:NavigationList items="{path: 'Model>/navigation'}" itemSelect="sideNavIsSelected">
           <tnt:NavigationListItem text="{path: 'Model>navigationListItem'}" items="{path: 'Model>navigationListSubItems'}" icon="{path: 'Model>icon'}" expanded="false">
-            <tnt:NavigationListItem text="{path: 'Model>title'}" enabled="true"/>
+            <tnt:NavigationListItem text="{path: 'Model>title'} класс" enabled="true"/>
           </tnt:NavigationListItem>
         </tnt:NavigationList>
       </tnt:SideNavigation>
     </tnt:sideContent>
 
     <tnt:mainContents>
+
+      <l:VerticalLayout>
+        <Label text="Физика легко?"/>
+      </l:VerticalLayout>
+      <l:VerticalLayout>
+        <Label text="Начнем!"/>
+      </l:VerticalLayout>
+      <l:VerticalLayout>
+        <Button id="saveButton" text="Проверь себя" press="onGoToCheckYourself"/>
+      </l:VerticalLayout>
+      <l:VerticalLayout>
+        <Text text="На современном этапе развития компьютерных технологий невозможно представить себе процесс обучения без использования тех или иных гаджетов. Успешность в изучении различных дисциплин в значительной степени зависит от уровня владения информацией, а также способностью эффективно ее использовать.
+    Данный сайт предоставляет вам возможность быстрого и дегкого изучения формул из школьного курса физики с помощью интерактивных катрочек."/>
+      </l:VerticalLayout>
 
     </tnt:mainContents>
   </tnt:ToolPage>

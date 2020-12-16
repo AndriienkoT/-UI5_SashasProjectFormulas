@@ -5,15 +5,13 @@
   xmlns:tnt="sap.tnt"
   xmlns:l="sap.ui.layout"
   xmlns:control="SashasProject.control"
-  controllerName="SashasProject.controller.Class" width="100%" height="100%"
+  controllerName="SashasProject.controller.CheckYourself" width="100%" height="100%"
   displayBlock="true">
 
   <tnt:ToolPage id="class" class="pageStandard">
     <tnt:header>
       <tnt:ToolHeader class="customHeader">
         <Button id="menuButton" icon="sap-icon://menu2" type="Transparent" press="onMenuButtonPress"/>
-        <ToolbarSpacer />
-        <Text text="{Model>/classVar} класс" class="customHeaderText" />
       </tnt:ToolHeader>
     </tnt:header>
 

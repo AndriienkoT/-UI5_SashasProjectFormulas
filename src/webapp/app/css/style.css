@@ -5,7 +5,7 @@
 }
 
 .pageStandard .sapContrast.sapTntSideNavigation {
-background: transparent;
+  background: transparent;
   border-right: 0;
 }
 
@@ -13,6 +13,21 @@ background: transparent;
 .customHeader.sapTntToolHeader.sapMTB {
   background-color: transparent;
   border: 0;
+}
+.customHeader .sapMText {
+  font-size: 1.3rem;
+}
+.customHeader .customHeaderText {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center !important;
+  margin-top: 10px !important;
+  right: 0;
+  min-height: 50px;
+  width: ~"calc(100% - 48px)";
+}
+.customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
+  color: black;
 }
 
 

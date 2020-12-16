@@ -87,6 +87,11 @@
           "target": "main"
         },
         {
+          "pattern": "checkYourself",
+          "name": "checkYourself",
+          "target": "checkYourself"
+        },
+        {
           "pattern": "class",
           "name": "class",
           "target": "class"
@@ -106,6 +111,11 @@
         "main": {
           "viewId": "main",
           "viewName": "Main",
+          "viewLevel": 1
+        },
+        "checkYourself": {
+          "viewId": "checkYourself",
+          "viewName": "CheckYourself",
           "viewLevel": 1
         },
         "class": {

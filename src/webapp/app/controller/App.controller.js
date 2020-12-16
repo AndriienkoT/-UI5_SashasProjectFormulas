@@ -5,8 +5,8 @@ sap.ui.define([
 
   return BaseController.extend("SashasProject.controller.App", {
 
-    onInit: function () {
-
+    onGoToCheckYourself: function () {
+      this.getRouter().navTo("checkYourself");
     }
   });
 });

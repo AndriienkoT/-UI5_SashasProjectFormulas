@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\webapp",
+    "\\src\\webapp\\app",
+    "\\src\\webapp\\app\\controller",
+    "\\src\\webapp\\app\\css",
+    "\\src\\webapp\\app\\model",
+    "\\src\\webapp\\app\\view"
   ],
-  "SelectedNode": "\\gulpfile.js",
+  "SelectedNode": "\\src\\webapp\\app\\manifest.production.json",
   "PreviewInSolutionExplorer": false
 }
