@@ -9,6 +9,6 @@
     "\\src\\webapp\\app\\model",
     "\\src\\webapp\\app\\view"
   ],
-  "SelectedNode": "\\src\\webapp\\app\\manifest.production.json",
+  "SelectedNode": "\\src\\webapp\\app\\view\\CheckYourself.view.xml",
   "PreviewInSolutionExplorer": false
 }
