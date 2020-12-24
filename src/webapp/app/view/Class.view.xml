@@ -32,7 +32,7 @@
         <Button id="selectFormulasButton" class="customBlueButton" text="Выбери формулы для изучения" press="onSelectFormulasPress"/>
         <Button id="goToCardsButton" class="customGreenButton" text="Перейти к карточкам" press="onDeselectFormulasPress" visible="false"/>
 
-        <smartList:SmartList id="chapterSmartList" class="customChapterSmartList" listType="Tree" enableAutoBinding="true" showRowCount="false" showFullScreenButton="true" listBindingPath="/formulas">
+        <smartList:SmartList id="classSmartList" class="customChapterSmartList" listType="Tree" enableAutoBinding="true" showRowCount="false" showFullScreenButton="true" listBindingPath="/formulas">
           <smartList:listItemTemplate>
 			      <StandardTreeItem title="{text}" />
 		      </smartList:listItemTemplate>

@@ -5,15 +5,15 @@
   xmlns:tnt="sap.tnt"
   xmlns:l="sap.ui.layout"
   xmlns:control="SashasProject.control"
+  xmlns:smartList="sap.ui.comp.smartlist"
   controllerName="SashasProject.controller.Chapter" width="100%" height="100%"
   displayBlock="true">
 
-  <tnt:ToolPage id="class" class="pageStandard">
+  <tnt:ToolPage id="chapter" class="pageStandard">
     <tnt:header>
       <tnt:ToolHeader class="customHeader">
         <Button id="menuButton" icon="sap-icon://menu2" type="Transparent" press="onMenuButtonPress"/>
-        <ToolbarSpacer />
-        <Text text="{Model>/chapterVar} раздел" class="customHeaderText" />
+        <Text text="{Model>/chapterVar}" class="customHeaderText" />
       </tnt:ToolHeader>
     </tnt:header>
 
@@ -21,19 +21,25 @@
       <tnt:SideNavigation id="sideNavigation" >
         <tnt:NavigationList items="{path: 'Model>/navigation'}" itemSelect="sideNavIsSelected">
           <tnt:NavigationListItem text="{path: 'Model>navigationListItem'}" items="{path: 'Model>navigationListSubItems'}" icon="{path: 'Model>icon'}" expanded="false">
-            <tnt:NavigationListItem text="{path: 'Model>title'} раздел" enabled="true"/>
+            <tnt:NavigationListItem text="{path: 'Model>title'}" enabled="true"/>
           </tnt:NavigationListItem>
         </tnt:NavigationList>
       </tnt:SideNavigation>
     </tnt:sideContent>
 
     <tnt:mainContents>
-      <Carousel  id="chapterCarousel" loop="false" pageChanged = "handleNextPage" pages="{path:'Model>/formulas'}">                                    
-        <control:FlipCard frontText="{Model>name}" backText="{Model>formula}" >
-        </control:FlipCard>
-      </Carousel>
+      <ScrollContainer horizontal="false" vertical="true" height="100%">
+        <Button id="selectFormulasButton" class="customBlueButton" text="Выбери формулы для изучения" press="onSelectFormulasPress"/>
+        <Button id="goToCardsButton" class="customGreenButton" text="Перейти к карточкам" press="onDeselectFormulasPress" visible="false"/>
 
+        <smartList:SmartList id="chapterSmartList" class="customChapterSmartList" listType="Tree" enableAutoBinding="true" showRowCount="false" showFullScreenButton="true" listBindingPath="/formulas">
+          <smartList:listItemTemplate>
+			      <StandardTreeItem title="{text}" />
+		      </smartList:listItemTemplate>
+	      </smartList:SmartList>
+      </ScrollContainer>
     </tnt:mainContents>
+
   </tnt:ToolPage>
 
 </mvc:View>

@@ -37,7 +37,11 @@ sap.ui.define([
       var sPath = oContext.sPath;
       var aPath = sPath.split("/");
       if (aPath.length == 5) {
-        this.getModel("Model").setProperty('/classVar', oContext.oModel.getProperty(sPath).title);
+        if (aPath[2] == "1") {
+          this.getModel("Model").setProperty('/classVar', oContext.oModel.getProperty(sPath).title);
+        } else if (aPath[2] == "2") {
+          this.getModel("Model").setProperty('/chapterVar', oContext.oModel.getProperty(sPath).title);
+        }
       }
       
       var oModelObject = oContext.oModel.getProperty(sPath);
@@ -77,6 +81,7 @@ sap.ui.define([
 
     goToChapter: function (oEvent) {
       this.getRouter().navTo("chapter");
+      this.getView().fireAfterRendering();
     },
 
     goToWebsite: function (oEvent) {

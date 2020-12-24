@@ -14,12 +14,12 @@ sap.ui.define([
       this._onObjectMatched();
 
       //set selection mode of smart list
-      var oTree = this.getView().byId("chapterSmartList").getList();
+      var oTree = this.getView().byId("classSmartList").getList();
 			oTree.setMode("MultiSelect");
 
       //set item selection of smart list
       var that = this;
-      this.getView().byId("chapterSmartList").getList().attachSelect(function(oEvent){
+      this.getView().byId("classSmartList").getList().attachSelect(function(oEvent){
         that.onHandleItemSelect();
       });
     },
@@ -51,7 +51,7 @@ sap.ui.define([
           }
         }
       });
-      var oSmartlist = this.getView().byId("chapterSmartList");
+      var oSmartlist = this.getView().byId("classSmartList");
 
       //removing selections
       oSmartlist.getList().removeSelections(true);
@@ -65,7 +65,7 @@ sap.ui.define([
     //press of "selectFormulasButton" (smart list expanding)
     onSelectFormulasPress: function(oEvent) {
       var that = oEvent.getSource().getParent().getParent().getParent().oController;
-      that.getView().byId("chapterSmartList").getList().expandToLevel(1);
+      that.getView().byId("classSmartList").getList().expandToLevel(1);
     },
 
     //press of "goToCardsButton" (navigating to "checkYourself")
@@ -76,8 +76,7 @@ sap.ui.define([
 
     //handling of selection of smart list item
     onHandleItemSelect: function(oEvent) {
-      var aSelectedItems = this.getView().byId("chapterSmartList").getList().getSelectedItems();
-      var oButton = this.getView().byId("selectFormulasButton");
+      var aSelectedItems = this.getView().byId("classSmartList").getList().getSelectedItems();
       var aSelectedFormulas = [];
       aSelectedItems.forEach(function (item, index) {
         aSelectedFormulas.push(item.getProperty("title"));
