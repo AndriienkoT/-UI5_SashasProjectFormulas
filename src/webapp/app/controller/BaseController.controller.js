@@ -9,9 +9,6 @@ sap.ui.define([
   "use strict";
 
   return Controller.extend("SashasProject.controller.BaseController", {
-    onInit: function () {
-      
-    },
 
     getModel: function (oEvent) {
       return this.getOwnerComponent().getModel("Model");
@@ -21,12 +18,19 @@ sap.ui.define([
       return sap.ui.core.UIComponent.getRouterFor(this);
     },
 
+    //press of side navigation button
     onMenuButtonPress : function (oEvent) {
       var viewId = this.getView().getId();
-      var mainPage = sap.ui.getCore().byId(viewId + "--main");
+      var aViewId = viewId.split("-");
+      if (aViewId[aViewId.length - 1] == "checkYourself") {
+        var mainPage = sap.ui.getCore().byId(viewId + "--class");
+      } else {
+        var mainPage = sap.ui.getCore().byId(viewId + "--" + aViewId[aViewId.length - 1]);
+      }
       mainPage.setSideExpanded(!mainPage.getSideExpanded());
     },
 
+    //slection of items in side navigation
     sideNavIsSelected: function (oEvent) {
       var oItem = oEvent.getParameter("item");
       var oContext = oItem.getBindingContext("Model");
@@ -34,7 +38,6 @@ sap.ui.define([
       var aPath = sPath.split("/");
       if (aPath.length == 5) {
         this.getModel("Model").setProperty('/classVar', oContext.oModel.getProperty(sPath).title);
-        console.log(this.getModel("Model").oData.classVar);
       }
       
       var oModelObject = oContext.oModel.getProperty(sPath);
@@ -51,6 +54,7 @@ sap.ui.define([
       }
     },
 
+    //press of back arrow
     onNavBack: function (oEvent) {
       var oHistory, sPreviousHash;
       oHistory = History.getInstance();

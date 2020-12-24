@@ -1,41 +1,62 @@
+                                                                 /*pageMain*/
 .pageMain {
-  background-image: url("../images/background.png");
-  opacity: 0.6;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/background.png");
   background-size: cover;
 }
 
-.pageStandard .sapContrast.sapTntSideNavigation {
-  background: transparent;
-  border-right: 0;
-}
-
+                                                                 /*header*/
 .customHeader.sapContrast.sapTntToolHeader.sapMTB,
 .customHeader.sapTntToolHeader.sapMTB {
   background-color: transparent;
   border: 0;
 }
 .customHeader .sapMText {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 .customHeader .customHeaderText {
   position: absolute;
-  vertical-align: middle;
-  text-align: center !important;
-  margin-top: 10px !important;
-  right: 0;
-  min-height: 50px;
-  width: ~"calc(100% - 48px)";
+  right: 50%;
 }
 .customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
   color: black;
 }
 
+                                                                 /*chapterSmartList*/
+.customChapterSmartList .sapMFlexItem {
+  max-height: 0;
+}
 
+                                                                 /*buttons*/
+.customBlueButton .sapMBtnInner {
+  background-color: blue;
+}
+.customGreenButton .sapMBtnInner {
+  background-color: green;
+}
 
+                                                                 /*formulaCarousel*/
+.customFormulaCarousel .sapMCrslHud a {
+  width: 4rem;
+  height: 4rem;
+}
+.customFormulaCarousel .flip {
+  width: 600px;
+  height: 600px;
+  top: 80px;
+}
+.customFormulaCarousel .flip .card .front,
+.customFormulaCarousel .flip .card .back{
+  background-color: lightgrey;
+  color: #346187;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customFormulaCarousel .flip .card .face {
+  line-height: 100px;
+}
 
-
-
-
+                                                                 /*flipCard*/
 .flip {
   -webkit-perspective: 800;
   width: 150px;
