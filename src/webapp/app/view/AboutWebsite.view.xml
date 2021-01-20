@@ -5,18 +5,20 @@
   xmlns:tnt="sap.tnt"
   xmlns:l="sap.ui.layout"
   xmlns:control="SashasProject.control"
-  controllerName="SashasProject.controller.CheckYourself" width="100%" height="100%"
+  xmlns:smartList="sap.ui.comp.smartlist"
+  controllerName="SashasProject.controller.App" width="100%" height="100%"
   displayBlock="true">
 
-  <tnt:ToolPage id="checkYourself" class="pageCheckYourself pageStandard">
+  <tnt:ToolPage id="aboutWebsite" class="pageAboutWebsite pageStandard">
     <tnt:header>
       <tnt:ToolHeader class="customHeader">
         <Button id="menuButton" icon="sap-icon://menu2" type="Transparent" press="onMenuButtonPress"/>
+        <Text text="{Model>/aboutWebsiteVar} O сайте" class="customHeaderText" />
       </tnt:ToolHeader>
     </tnt:header>
 
     <tnt:sideContent>
-      <tnt:SideNavigation id="sideNavigation" >
+      <tnt:SideNavigation id="sideNavigation" expanded="true">
         <tnt:NavigationList items="{path: 'Model>/navigation'}" itemSelect="sideNavIsSelected">
           <tnt:NavigationListItem text="{path: 'Model>navigationListItem'}" items="{path: 'Model>navigationListSubItems'}" icon="{path: 'Model>icon'}" expanded="false">
             <tnt:NavigationListItem text="{path: 'Model>title'}" enabled="true"/>
@@ -26,10 +28,13 @@
     </tnt:sideContent>
 
     <tnt:mainContents>
-      <Carousel  id="formulaCarousel" class="customFormulaCarousel" loop="false" pageChanged = "handleNextPage" pages="{path:'/formulas'}">                                    
-        <control:FlipCard frontText="{text}" backText="{formula}" >
-        </control:FlipCard>
-      </Carousel>
+
+      <l:VerticalLayout>
+        <Text text="На данном сайте представлены физические формулы за 7—11 классы с их кратким описанием. Вы можете выбрать удобный для вас метод изучения:
+        По классам (7,8,9,10,11) и по разделам за каждый год обучения;
+        По разделам всего школьного курса физики;
+        С помощью алфавитного указателя."/>
+      </l:VerticalLayout>
 
     </tnt:mainContents>
   </tnt:ToolPage>

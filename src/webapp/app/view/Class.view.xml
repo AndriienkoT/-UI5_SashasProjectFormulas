@@ -9,7 +9,7 @@
   controllerName="SashasProject.controller.Class" width="100%" height="100%"
   displayBlock="true">
 
-  <tnt:ToolPage id="class" class="pageStandard">
+  <tnt:ToolPage id="class" class="pageClass pageStandard">
     <tnt:header>
       <tnt:ToolHeader class="customHeader">
         <Button id="menuButton" icon="sap-icon://menu2" type="Transparent" press="onMenuButtonPress"/>

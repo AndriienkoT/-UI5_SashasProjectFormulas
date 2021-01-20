@@ -25,16 +25,16 @@
 
     <tnt:mainContents>
 
-      <l:VerticalLayout>
+      <l:VerticalLayout class="customVerticalLayout1">
         <Label text="Физика легко?"/>
       </l:VerticalLayout>
-      <l:VerticalLayout>
+      <l:VerticalLayout class="customVerticalLayout2">
         <Label text="Начнем!"/>
       </l:VerticalLayout>
-      <l:VerticalLayout>
+      <l:VerticalLayout class="customVerticalLayout3">
         <Button id="checkYourselfButton" class="checkYourselfButton" text="Проверь себя" press="onGoToCheckYourself"/>
       </l:VerticalLayout>
-      <l:VerticalLayout>
+      <l:VerticalLayout class="customVerticalLayout4">
         <Text text="На современном этапе развития компьютерных технологий невозможно представить себе процесс обучения без использования тех или иных гаджетов. Успешность в изучении различных дисциплин в значительной степени зависит от уровня владения информацией, а также способностью эффективно ее использовать.
     Данный сайт предоставляет вам возможность быстрого и легкого изучения формул из школьного курса физики с помощью интерактивных катрочек."/>
       </l:VerticalLayout>

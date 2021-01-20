@@ -1,6 +1,6 @@
                                                                  /*pageMain*/
-.pageMain {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/background.png");
+.pageMain, .pageCheckYourself, .pageClass, .pageChapter, .pageAboutWebsite {
+  background-image: linear-gradient(rgba(219, 219, 220, 0.2), rgba(219, 219, 220, 0.2)), url("../images/background1.png");
   background-size: cover;
 }
 
@@ -18,7 +18,7 @@
   right: 50%;
 }
 .customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
-  color: black;
+  color: #1d2424;
 }
 
                                                                  /*chapterSmartList*/
@@ -28,10 +28,12 @@
 
                                                                  /*buttons*/
 .customBlueButton .sapMBtnInner {
-  background-color: blue;
+  background-color: #69849b;
+  color: #1d2424;
 }
 .customGreenButton .sapMBtnInner {
-  background-color: green;
+  background-color: #3d6a66;
+  color: #1d2424;
 }
 
                                                                  /*formulaCarousel*/
@@ -46,8 +48,8 @@
 }
 .customFormulaCarousel .flip .card .front,
 .customFormulaCarousel .flip .card .back{
-  background-color: lightgrey;
-  color: #346187;
+  background-color: #d0c3bd;
+  color: #69849b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,4 +101,49 @@
   background: white;
   color: black;
   cursor: pointer;
+}
+
+
+
+.sapMBtnInner {
+  background-color: #69849b;
+  color: #1d2424;
+  font-weight: 600;
+}
+
+.sapMText {
+  font-size: large;
+}
+
+.sapMLabelMaxWidth .sapMLabel {
+  text-align: center;
+}
+
+
+                                                                 /*verticalLayout mainPage*/
+
+.customVerticalLayout1.sapUiVlt,
+.customVerticalLayout2.sapUiVlt,
+.customVerticalLayout3.sapUiVlt,
+.customVerticalLayout4.sapUiVlt {
+  display: block;
+  text-align: center;
+}
+.customVerticalLayout1.sapUiVlt {
+  height: 100px;
+}
+.customVerticalLayout4.sapUiVlt {
+  height: 400px;
+}
+
+
+.customVerticalLayout1 .sapMLabel {
+  font-size: 36px;
+  color:blue;
+}
+
+
+                                                                 /*customChapterSmartList*/
+.customChapterSmartList .sapMLIB {
+  background-color: lightgrey;
 }
