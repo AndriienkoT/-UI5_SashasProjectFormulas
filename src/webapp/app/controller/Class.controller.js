@@ -33,21 +33,21 @@ sap.ui.define([
       var sClassVar = this.getModel("Model").oData.classVar;
       oData.forEach(function(item, index) {
         if (sClassVar == "" || item.class == sClassVar) {
-          var nChapterExist = null;
+          var nSectionExist = null;
           oSortedCurrentModel.formulas.forEach(function(itemInSortedCurrentModel, index) {
-            if (itemInSortedCurrentModel.text == item.chapter) {
-              nChapterExist = index;
+            if (itemInSortedCurrentModel.text == item.section) {
+              nSectionExist = index;
             }
           });
-          if (nChapterExist == null) {
+          if (nSectionExist == null) {
             var oNewItem = {
-              "text" : item.chapter,
+              "text": item.section,
               "nodes" : []
             };
             oNewItem.nodes.push(item);
             oSortedCurrentModel.formulas.push(oNewItem);
           } else {
-            oSortedCurrentModel.formulas[nChapterExist].nodes.push(item);
+            oSortedCurrentModel.formulas[nSectionExist].nodes.push(item);
           }
         }
       });
@@ -78,8 +78,14 @@ sap.ui.define([
     onHandleItemSelect: function(oEvent) {
       var aSelectedItems = this.getView().byId("classSmartList").getList().getSelectedItems();
       var aSelectedFormulas = [];
+      var that = this;
       aSelectedItems.forEach(function (item, index) {
-        aSelectedFormulas.push(item.getProperty("title"));
+        sPath = item.getBinding("title").getContext().sPath;
+        nSectionIdIn = sPath.split("/")[2];
+        nItemIdInNode = sPath.split("/")[4];
+        var aSmartListFormulas = that.getView().byId("classSmartList").getModel().oData.formulas;
+        var nItemId = aSmartListFormulas[nSectionIdIn].nodes[nItemIdInNode].id;
+        aSelectedFormulas.push(nItemId);
       });
       var uniqueArray = aSelectedFormulas.filter(function(item, pos) {
           return aSelectedFormulas.indexOf(item) == pos;

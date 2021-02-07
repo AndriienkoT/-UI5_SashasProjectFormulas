@@ -55,7 +55,7 @@ sap.ui.define([
 
       aSelectedFormulas.forEach(function(itemInSelectedFormulas, index) {
         oData.forEach(function(itemInOData, index) {
-          if (itemInOData.text == itemInSelectedFormulas) {
+          if (itemInOData.id == itemInSelectedFormulas) {
             oSortedCurrentModel.formulas.push(itemInOData);
           }
         });
