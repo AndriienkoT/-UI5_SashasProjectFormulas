@@ -1,0 +1,56 @@
+@import "Main.less";
+@import "CheckYourself.less";
+@import "Class.less";
+@import "Chapter.less";
+@import "variables.less";
+
+                                                    /*background*/
+.pageMain,
+.pageCheckYourself,
+.pageClass,
+.pageChapter,
+.pageAboutWebsite {
+  background-image: @allViews-background-image;
+  background-size: @allViews-background-size;
+}
+
+                                                    /*header*/
+.customHeader.sapContrast.sapTntToolHeader.sapMTB,
+.customHeader.sapTntToolHeader.sapMTB {
+  background-color: transparent;
+  border: @customHeader-border;
+}
+
+.customHeader {
+  .sapMText {
+    font-size: @customHeader-sapMText-font-size;
+  }
+}
+
+.customHeader {
+  .customHeaderText {
+    position: absolute;
+    left: @customHeader-customHeaderText-left;
+  }
+}
+
+.customHeader.sapContrast.sapMText {
+  color: @customHeader-sapMText-color;
+}
+
+.customHeader.sapContrast {
+  .sapMText {
+    color: @customHeader-sapMText-color;
+  }
+}
+
+                                                    /*buttons*/
+.customBlueButton .sapMBtnInner {
+  background-color: @customBlueButton-background-color;
+  color: @customBlueButton-color;
+}
+
+.customGreenButton .sapMBtnInner {
+  background-color: @customGreenButton-background-color;
+  color: @customGreenButton-color;
+}

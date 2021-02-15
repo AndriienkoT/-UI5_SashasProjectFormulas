@@ -1,11 +1,11 @@
                                                                  /*pageMain*/
-.pageMain, .pageCheckYourself, .pageClass, .pageChapter, .pageAboutWebsite {
+/*.pageMain, .pageCheckYourself, .pageClass, .pageChapter, .pageAboutWebsite {
   background-image: linear-gradient(rgba(219, 219, 220, 0.2), rgba(219, 219, 220, 0.2)), url("../images/background1.png");
   background-size: cover;
-}
+}*/
 
                                                                  /*header*/
-.customHeader.sapContrast.sapTntToolHeader.sapMTB,
+/*.customHeader.sapContrast.sapTntToolHeader.sapMTB,
 .customHeader.sapTntToolHeader.sapMTB {
   background-color: transparent;
   border: 0;
@@ -15,26 +15,29 @@
 }
 .customHeader .customHeaderText {
   position: absolute;
-  right: 50%;
+  left: calc(50% - 19px);
 }
 .customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
   color: #1d2424;
-}
+}*/
 
                                                                  /*chapterSmartList*/
 .customChapterSmartList .sapMFlexItem {
   max-height: 0;
 }
+.customChapterSmartList .sapMLIB {
+  background-color: lightgrey;
+}
 
                                                                  /*buttons*/
-.customBlueButton .sapMBtnInner {
+/*.customBlueButton .sapMBtnInner {
   background-color: #69849b;
   color: #1d2424;
 }
 .customGreenButton .sapMBtnInner {
   background-color: #3d6a66;
   color: #1d2424;
-}
+}*/
 
                                                                  /*formulaCarousel*/
 .customFormulaCarousel .sapMCrslHud a {
@@ -122,7 +125,7 @@
 
                                                                  /*verticalLayout mainPage*/
 
-.customVerticalLayout1.sapUiVlt,
+/*.customVerticalLayout1.sapUiVlt,
 .customVerticalLayout2.sapUiVlt,
 .customVerticalLayout3.sapUiVlt,
 .customVerticalLayout4.sapUiVlt {
@@ -140,10 +143,5 @@
 .customVerticalLayout1 .sapMLabel {
   font-size: 36px;
   color:blue;
-}
+}*/
 
-
-                                                                 /*customChapterSmartList*/
-.customChapterSmartList .sapMLIB {
-  background-color: lightgrey;
-}
