@@ -78,8 +78,14 @@ sap.ui.define([
       onHandleItemSelect: function(oEvent) {
         var aSelectedItems = this.getView().byId("chapterSmartList").getList().getSelectedItems();
         var aSelectedFormulas = [];
+        var that = this;
         aSelectedItems.forEach(function (item, index) {
-          aSelectedFormulas.push(item.getProperty("title"));
+          sPath = item.getBinding("title").getContext().sPath;
+          nSectionIdIn = sPath.split("/")[2];
+          nItemIdInNode = sPath.split("/")[4];
+          var aSmartListFormulas = that.getView().byId("chapterSmartList").getModel().oData.formulas;
+          var nItemId = aSmartListFormulas[nSectionIdIn].nodes[nItemIdInNode].id;
+          aSelectedFormulas.push(nItemId);
         });
         var uniqueArray = aSelectedFormulas.filter(function(item, pos) {
             return aSelectedFormulas.indexOf(item) == pos;
