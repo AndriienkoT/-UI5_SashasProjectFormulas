@@ -34,7 +34,7 @@
 
         <smartList:SmartList id="chapterSmartList" class="customChapterSmartList" listType="Tree" enableAutoBinding="true" showRowCount="false" showFullScreenButton="true" listBindingPath="/formulas">
           <smartList:listItemTemplate>
-			      <StandardTreeItem title="{text}" />
+			      <StandardTreeItem title="{text}" class="customItems" />
 		      </smartList:listItemTemplate>
 	      </smartList:SmartList>
       </ScrollContainer>

@@ -7,7 +7,7 @@
                                                                  /*header*/
 /*.customHeader.sapContrast.sapTntToolHeader.sapMTB,
 .customHeader.sapTntToolHeader.sapMTB {
-  background-color: transparent;
+  background-color: #3f5161;
   border: 0;
 }
 .customHeader .sapMText {
@@ -15,11 +15,15 @@
 }
 .customHeader .customHeaderText {
   position: absolute;
-  left: calc(50% - 19px);
+  right: 47%;
 }
 .customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
   color: #1d2424;
 }*/
+.customHeader.sapContrast.sapMText, .customHeader.sapContrast .sapMText {
+  color: #718da5;
+  font-weight: 600;
+}
 
                                                                  /*chapterSmartList*/
 .customChapterSmartList .sapMFlexItem {
@@ -27,6 +31,10 @@
 }
 .customChapterSmartList .sapMLIB {
   background-color: lightgrey;
+}
+
+html.sap-desktop .customChapterSmartList .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus>.sapMCbBg {
+  outline: none;
 }
 
                                                                  /*buttons*/
@@ -71,7 +79,7 @@
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(180deg);
-  -webkit-transition: -webkit-transform 0.1s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
 }
 .flip .card {
   width: 100%;
@@ -86,6 +94,7 @@
   -webkit-backface-visibility: hidden ;
   z-index: 2;
   font-family: Georgia;
+
   font-size: 3em;
   text-align: center;
   line-height: 200px;
@@ -99,8 +108,8 @@
 }
 .flip .card .back {
   -webkit-transform: rotatey(180deg);
-  -webkit-transition: -webkit-transform 0.1s ease-in;
-  background: blue;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  background: #3f5161;
   background: white;
   color: black;
   cursor: pointer;
@@ -110,7 +119,7 @@
 
 .sapMBtnInner {
   background-color: #69849b;
-  color: #1d2424;
+  color: #223636;
   font-weight: 600;
 }
 
@@ -123,7 +132,7 @@
 }
 
 
-                                                                 /*verticalLayout mainPage*/
+                                                                 /*verticalLayout mainPage aboutWebsitePage*/
 
 /*.customVerticalLayout1.sapUiVlt,
 .customVerticalLayout2.sapUiVlt,
@@ -133,15 +142,61 @@
   text-align: center;
 }
 .customVerticalLayout1.sapUiVlt {
-  height: 100px;
+  padding: 150px 0px 10px;
+  background-color:rgb(105, 132, 155, 0.1);
+}
+.customVerticalLayout2.sapUiVlt {
+  padding: 0px 0px 150px;
+  background-color:rgb(105, 132, 155, 0.1);
+}
+.customVerticalLayout3.sapUiVlt {
+  padding: 0px 0px 100px;
+  background-color:rgb(105, 132, 155, 0.1);
 }
 .customVerticalLayout4.sapUiVlt {
-  height: 400px;
-}
-
+  background-color: rgba(219, 219, 220, 0.6);
+  margin: 56px 220px 0px 120px;
+  text-align: center;
+} 
 
 .customVerticalLayout1 .sapMLabel {
+<<<<<<< HEAD
   font-size: 36px;
   color:blue;
 }*/
 
+=======
+  font-size: 40px;
+  font-weight: 900;
+  color: #1d2424;
+}
+.customVerticalLayout2 .sapMLabel {
+  font-size: 40px;
+  font-weight: 900;
+  color: #1d2424;
+}
+
+
+.customVerticalLayout5.sapUiVlt {
+  display: block;
+  padding: 20px 100px 0px 45px;
+  background-color: rgba(219, 219, 220, 0.6);
+}
+.customVerticalLayout5 .sapMLabel {
+  font-size: large;
+  color: rgb(19, 18, 18);
+}
+
+                                                                 /*customChapterSmartList*/
+.customChapterSmartList .sapMLIB {
+  background-color: rgba(219, 219, 220, 0.9);
+}
+
+
+                                                                 /*verticalLayout aboutWebsitePage*/
+.customVerticalLayout4 {
+  background-color: rgba(219, 219, 220, 0.4);
+  margin: 20px 220px 0px 120px;
+  text-align: center;
+}
+>>>>>>> ce34021376cf2f5cb31bc6c011d88ecb56233f6d

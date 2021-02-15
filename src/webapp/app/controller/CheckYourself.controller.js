@@ -26,7 +26,7 @@ sap.ui.define([
     //when routed from Main page, 10 random formulas are set to carousel model
     onTakeTenRandom: function() {
       var aFormulaIds = [];
-        for (var i = 0; i < 55; i++) {
+        for (var i = 0; i < 190; i++) {
           aFormulaIds[i] = i;
         }
         var aRandomFormulaIds = aFormulaIds.sort(() => 0.5 - Math.random());

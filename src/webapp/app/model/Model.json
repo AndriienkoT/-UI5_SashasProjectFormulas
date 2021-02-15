@@ -2,12 +2,12 @@
   "navigation": [
     {
       "navigationListItem": "Главная",
-      "icon": "sap-icon://person-placeholder",
+      "icon": "sap-icon://appear-offline",
       "routTo": "main"
     },
     {
       "navigationListItem": "Класс",
-      "icon": "sap-icon://person-placeholder",
+      "icon": "sap-icon://appear-offline",
       "navigationListSubItems": [
         {
           "title": "7",
@@ -33,7 +33,7 @@
     },
     {
       "navigationListItem": "Раздел",
-      "icon": "sap-icon://person-placeholder",
+      "icon": "sap-icon://appear-offline",
       "navigationListSubItems": [
         {
           "title": "Механика",
@@ -63,7 +63,7 @@
     },
     {
       "navigationListItem": "O сайте",
-      "icon": "sap-icon://person-placeholder",
+      "icon": "sap-icon://sys-help-2",
       "routTo": "aboutWebsite"
     }
   ],
@@ -501,6 +501,7 @@
       "formula": "λ = h / p",
       "class": "11",
       "section": "Теория фотоэффекта",
+
       "chapter": "Квантовая физика"
     },
     {
