@@ -49,57 +49,39 @@
     height: @checkYourself-flipCard-flip-height;
     position: @checkYourself-flipCard-flip-position;
     margin: @checkYourself-flipCard-flip-margin;
-  }
-
-  .flip {
-      .card.flipped {
-    -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
-    -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
-  }
-}
-
-  .flip {
-      .card {
-    width: @checkYourself-flipCard-flip-card-width;
-    height: @checkYourself-flipCard-flip-card-height;
-    -webkit-transform-style: @checkYourself-flipCard-flip-card-webkit-transform-style;
-    -webkit-transition: @checkYourself-flipCard-flip-card-webkit-transition;
-  }
-}
-  .flip {
-      .card {
-          .face {
-              width: @checkYourself-flipCard-flip-card-width;
-              height: @checkYourself-flipCard-flip-card-height;
-              position: @checkYourself-flipCard-flip-card-face-position;
-              -webkit-backface-visibility: @checkYourself-flipCard-flip-card-face-webkit-backface-visibility;
-              z-index: @checkYourself-flipCard-flip-card-face-z-index;
-              font-family: @checkYourself-flipCard-flip-card-face-font-family;
-              font-size: @checkYourself-flipCard-flip-card-face-font-size;
-              text-align: @checkYourself-flipCard-flip-card-face-text-align;
-              line-height: @checkYourself-flipCard-flip-card-face-line-height;
-    }
-  }
-}
-  .flip {
-      .card {
-          .front {
-              position: @checkYourself-flipCard-flip-card-face-position;
-              z-index: @checkYourself-flipCard-flip-card-front-z-index;
-              background: @checkYourself-flipCard-flip-card-front-background;
-              color: @checkYourself-flipCard-flip-card-front-color;
-              cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
-    }
-  }
-}
-  .flip {
-      .card {
-          .back {
-    -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
-    -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
-    background: @checkYourself-flipCard-flip-card-back-background;
-    color: @checkYourself-flipCard-flip-card-back-color;
-    cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
-    }
-  }
+    .card {
+        width: @checkYourself-flipCard-flip-card-width;
+        height: @checkYourself-flipCard-flip-card-height;
+        -webkit-transform-style: @checkYourself-flipCard-flip-card-webkit-transform-style;
+        -webkit-transition: @checkYourself-flipCard-flip-card-webkit-transition;
+        .face {
+            width: @checkYourself-flipCard-flip-card-width;
+            height: @checkYourself-flipCard-flip-card-height;
+            position: @checkYourself-flipCard-flip-card-face-position;
+            -webkit-backface-visibility: @checkYourself-flipCard-flip-card-face-webkit-backface-visibility;
+            z-index: @checkYourself-flipCard-flip-card-face-z-index;
+            font-family: @checkYourself-flipCard-flip-card-face-font-family;
+            font-size: @checkYourself-flipCard-flip-card-face-font-size;
+            text-align: @checkYourself-flipCard-flip-card-face-text-align;
+            line-height: @checkYourself-flipCard-flip-card-face-line-height;
+        }
+        .front {
+            position: @checkYourself-flipCard-flip-card-face-position;
+            z-index: @checkYourself-flipCard-flip-card-front-z-index;
+            background: @checkYourself-flipCard-flip-card-front-background;
+            color: @checkYourself-flipCard-flip-card-front-color;
+            cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
+        }
+        .back {
+            -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
+            -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
+            background: @checkYourself-flipCard-flip-card-back-background;
+            color: @checkYourself-flipCard-flip-card-back-color;
+            cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
+        }
+      }
+    .card.flipped {
+        -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
+        -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
+      }
 }

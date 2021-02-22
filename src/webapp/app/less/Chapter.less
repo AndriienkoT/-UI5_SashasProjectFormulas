@@ -2,3 +2,25 @@
 /* CSS for Chapter.view.xml  */
 /* ====================== */
 @import "variables.less";
+
+                                                      /*customChapterSmartList*/
+
+.customChapterSmartList{
+    .sapMFlexItem {
+      max-height: @smartList-item-max-height;
+    }
+  }
+  
+  .customChapterSmartList {
+    .sapMLIB {
+    background-color: @smartList-background-color;
+    }
+  }
+  
+  html.sap-desktop {
+    .customChapterSmartList {
+      .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus>.sapMCbBg {
+        outline: @smartList-item-outline;
+      }
+    }
+  }

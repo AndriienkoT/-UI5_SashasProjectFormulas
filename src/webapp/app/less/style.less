@@ -53,45 +53,40 @@
 }
 
                                                     /*side navigation*/
-.pageMain {
+.pageStandard {
   .sapTntSideNavigation {
     width: @allViews-sideNavigation-width;
   }
 }
 
-.sap-desktop .pageMain .sapTntToolPageAside + .sapTntToolPageMain, .sap-tablet .pageMain .sapTntToolPageAside + .sapTntToolPageMain {
-  padding-left: @allViews-sideNavigation-width;
-}
-
-                                                    /*buttons*/
-.customBlueButton .sapMBtnInner {
-  background-color: @allViews-customBlueButton-background-color;
-  color: @allViews-customBlueButton-color;
-}
-
-.customGreenButton .sapMBtnInner {
-  background-color: @allViews-customGreenButton-background-color;
-  color: @allViews-customGreenButton-color;
-}
-
-                                                    /*buttons*/
-
-.customChapterSmartList{
-  .sapMFlexItem {
-    max-height: @smartList-item-max-height;
-  }
-}
-
-.customChapterSmartList {
-  .sapMLIB {
-  background-color: @smartList-background-color;
-  }
-}
-
-html.sap-desktop {
-  .customChapterSmartList {
-    .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus>.sapMCbBg {
-      outline: @smartList-item-outline;
+.sap-desktop {
+  .pageStandard {
+    .sapTntToolPageAside + .sapTntToolPageMain {
+      padding-left: @allViews-sideNavigation-width;
     }
   }
 }
+.sap-tablet {
+  .pageMain {
+    .sapTntToolPageAside +.sapTntToolPageMain {
+      padding-left: @allViews-sideNavigation-width;
+    }
+  }
+}
+
+                                                    /*buttons*/
+.customBlueButton {
+  .sapMBtnInner {
+    background-color: @allViews-customBlueButton-background-color;
+    color: @allViews-customBlueButton-color;
+  }
+}
+
+.customGreenButton {
+  .sapMBtnInner {
+    background-color: @allViews-customGreenButton-background-color;
+    color: @allViews-customGreenButton-color;
+  }
+}
+
+                                                    
