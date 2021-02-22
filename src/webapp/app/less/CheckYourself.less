@@ -4,84 +4,76 @@
 @import "variables.less";
 
 .customFormulaCarousel {
-    .sapMCrslHud a {
-        width: @checkYourself-customFormulaCarousel-sapMCrslHud-width;
-        height: @checkYourself-customFormulaCarousel-sapMCrslHud-height;
+  .sapMCrslHud a {
+    width: @checkYourself-customFormulaCarousel-sapMCrslHud-width;
+    height: @checkYourself-customFormulaCarousel-sapMCrslHud-height;
+  }
+
+  .flip {
+    width: @checkYourself-customFormulaCarousel-flip-width;
+    height: @checkYourself-customFormulaCarousel-flip-height;
+    top: @checkYourself-customFormulaCarousel-flip-top;
+
+    .card {
+      .face {
+        line-height: @checkYourself-customFormulaCarousel-flip-card-face-line-height;
+      }
+      .front, .back {
+        background-color: @checkYourself-customFormulaCarousel-flip-card-front-back-background-color;
+        color: @checkYourself-customFormulaCarousel-flip-card-front-back-color;
+        display: @checkYourself-customFormulaCarousel-flip-card-front-back-display;
+        justify-content: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
+        align-items: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
+      }
     }
+  }
 } 
 
-.customFormulaCarousel {
-    .flip {
-        width: @checkYourself-customFormulaCarousel-flip-width;
-        height: @checkYourself-customFormulaCarousel-flip-height;
-        top: @checkYourself-customFormulaCarousel-flip-top;
-    }
-}
-.customFormulaCarousel {
-    .flip {
-        .card {
-            .front, .back {
-                background-color: @checkYourself-customFormulaCarousel-flip-card-front-back-background-color;
-                color: @checkYourself-customFormulaCarousel-flip-card-front-back-color;
-                display: @checkYourself-customFormulaCarousel-flip-card-front-back-display;
-                justify-content: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
-                align-items: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
-            }
-        }
-    }
-}
-
-.customFormulaCarousel {
-    .flip {
-        .card {
-            .face {
-                line-height: @checkYourself-customFormulaCarousel-flip-card-face-line-height;
-            }
-        }
-    }
-}
-
-
-
 .flip {
-    -webkit-perspective: @checkYourself-flipCard-flip-webkit-perspective;
-    width: @checkYourself-flipCard-flip-width;
-    height: @checkYourself-flipCard-flip-height;
-    position: @checkYourself-flipCard-flip-position;
-    margin: @checkYourself-flipCard-flip-margin;
-    .card {
-        width: @checkYourself-flipCard-flip-card-width;
-        height: @checkYourself-flipCard-flip-card-height;
-        -webkit-transform-style: @checkYourself-flipCard-flip-card-webkit-transform-style;
-        -webkit-transition: @checkYourself-flipCard-flip-card-webkit-transition;
-        .face {
-            width: @checkYourself-flipCard-flip-card-width;
-            height: @checkYourself-flipCard-flip-card-height;
-            position: @checkYourself-flipCard-flip-card-face-position;
-            -webkit-backface-visibility: @checkYourself-flipCard-flip-card-face-webkit-backface-visibility;
-            z-index: @checkYourself-flipCard-flip-card-face-z-index;
-            font-family: @checkYourself-flipCard-flip-card-face-font-family;
-            font-size: @checkYourself-flipCard-flip-card-face-font-size;
-            text-align: @checkYourself-flipCard-flip-card-face-text-align;
-            line-height: @checkYourself-flipCard-flip-card-face-line-height;
-        }
-        .front {
-            position: @checkYourself-flipCard-flip-card-face-position;
-            z-index: @checkYourself-flipCard-flip-card-front-z-index;
-            background: @checkYourself-flipCard-flip-card-front-background;
-            color: @checkYourself-flipCard-flip-card-front-color;
-            cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
-        }
-        .back {
-            -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
-            -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
-            background: @checkYourself-flipCard-flip-card-back-background;
-            color: @checkYourself-flipCard-flip-card-back-color;
-            cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
-        }
-      }
-    .card.flipped {
-        -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
-        -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
-      }
+  -webkit-perspective: @checkYourself-flipCard-flip-webkit-perspective;
+  width: @checkYourself-flipCard-flip-width;
+  height: @checkYourself-flipCard-flip-height;
+  position: @checkYourself-flipCard-flip-position;
+  margin: @checkYourself-flipCard-flip-margin;
+
+  .card {
+    width: @checkYourself-flipCard-flip-card-width;
+    height: @checkYourself-flipCard-flip-card-height;
+    -webkit-transform-style: @checkYourself-flipCard-flip-card-webkit-transform-style;
+    -webkit-transition: @checkYourself-flipCard-flip-card-webkit-transition;
+
+    .face {
+      width: @checkYourself-flipCard-flip-card-width;
+      height: @checkYourself-flipCard-flip-card-height;
+      position: @checkYourself-flipCard-flip-card-face-position;
+      -webkit-backface-visibility: @checkYourself-flipCard-flip-card-face-webkit-backface-visibility;
+      z-index: @checkYourself-flipCard-flip-card-face-z-index;
+      font-family: @checkYourself-flipCard-flip-card-face-font-family;
+      font-size: @checkYourself-flipCard-flip-card-face-font-size;
+      text-align: @checkYourself-flipCard-flip-card-face-text-align;
+      line-height: @checkYourself-flipCard-flip-card-face-line-height;
+    }
+
+    .front {
+      position: @checkYourself-flipCard-flip-card-face-position;
+      z-index: @checkYourself-flipCard-flip-card-front-z-index;
+      background: @checkYourself-flipCard-flip-card-front-background;
+      color: @checkYourself-flipCard-flip-card-front-color;
+      cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
+    }
+
+    .back {
+      -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
+      -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
+      background: @checkYourself-flipCard-flip-card-back-background;
+      color: @checkYourself-flipCard-flip-card-back-color;
+      cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
+      font-size: 3.2vw;
+    }
+  }
+
+  .card.flipped {
+    -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
+    -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
+  }
 }
