@@ -18,25 +18,25 @@
 .customHeader.sapContrast.sapTntToolHeader.sapMTB,
 .customHeader.sapTntToolHeader.sapMTB {
   background-color: transparent;
-  border: @customHeader-border;
+  border: @allViews-customHeader-border;
 }
 
 .customHeader {
   .sapMText {
-    font-size: @customHeader-sapMText-font-size;
+    font-size: @allViews-customHeader-sapMText-font-size;
   }
 }
 
 .customHeader {
   .customHeaderText {
     position: absolute;
-    left: @customHeader-customHeaderText-left;
+    left: @allViews-customHeader-customHeaderText-left;
   }
 }
 
 .customHeader.sapContrast.sapMText {
-  color: @customHeader-sapMText-color;
   font-weight: @customHeader-sapMText-font-weight;
+  color: @allViews-customHeader-sapMText-color;
 }
 
 .customHeader.sapContrast {
@@ -48,18 +48,30 @@
 
 .customHeader.sapContrast.sapTntToolHeader.sapMTB, 
 .customHeader.sapTntToolHeader.sapMTB {
-  background-color: @customHeader-background-color;
+    background-color: @customHeader-background-color;
+    color: @allViews-customHeader-sapMText-color;
+}
+
+                                                    /*side navigation*/
+.pageMain {
+  .sapTntSideNavigation {
+    width: @allViews-sideNavigation-width;
+  }
+}
+
+.sap-desktop .pageMain .sapTntToolPageAside + .sapTntToolPageMain, .sap-tablet .pageMain .sapTntToolPageAside + .sapTntToolPageMain {
+  padding-left: @allViews-sideNavigation-width;
 }
 
                                                     /*buttons*/
 .customBlueButton .sapMBtnInner {
-  background-color: @customBlueButton-background-color;
-  color: @customBlueButton-color;
+  background-color: @allViews-customBlueButton-background-color;
+  color: @allViews-customBlueButton-color;
 }
 
 .customGreenButton .sapMBtnInner {
-  background-color: @customGreenButton-background-color;
-  color: @customGreenButton-color;
+  background-color: @allViews-customGreenButton-background-color;
+  color: @allViews-customGreenButton-color;
 }
 
                                                     /*buttons*/
