@@ -3,32 +3,7 @@
 /* ====================== */
 @import "variables.less";
 
-.customFormulaCarousel {
-  .sapMCrslHud a {
-    width: @checkYourself-customFormulaCarousel-sapMCrslHud-width;
-    height: @checkYourself-customFormulaCarousel-sapMCrslHud-height;
-  }
-
-  .flip {
-    width: @checkYourself-customFormulaCarousel-flip-width;
-    height: @checkYourself-customFormulaCarousel-flip-height;
-    top: @checkYourself-customFormulaCarousel-flip-top;
-
-    .card {
-      .face {
-        line-height: @checkYourself-customFormulaCarousel-flip-card-face-line-height;
-      }
-      .front, .back {
-        background-color: @checkYourself-customFormulaCarousel-flip-card-front-back-background-color;
-        color: @checkYourself-customFormulaCarousel-flip-card-front-back-color;
-        display: @checkYourself-customFormulaCarousel-flip-card-front-back-display;
-        justify-content: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
-        align-items: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
-      }
-    }
-  }
-} 
-
+                                                       /*flip card standard*/
 .flip {
   -webkit-perspective: @checkYourself-flipCard-flip-webkit-perspective;
   width: @checkYourself-flipCard-flip-width;
@@ -68,12 +43,43 @@
       background: @checkYourself-flipCard-flip-card-back-background;
       color: @checkYourself-flipCard-flip-card-back-color;
       cursor: @checkYourself-flipCard-flip-card-front-back-cursor;
-      font-size: 3.2vw;
     }
   }
 
   .card.flipped {
     -webkit-transform: @checkYourself-flipCard-card-flipped-webkit-transform;
     -webkit-transition: @checkYourself-flipCard-card-flipped-webkit-transition;
+  }
+}
+
+                                                               /*flip card custom*/
+.customFormulaCarousel {
+  .sapMCrslHud a {
+    width: @checkYourself-customFormulaCarousel-sapMCrslHud-width;
+    height: @checkYourself-customFormulaCarousel-sapMCrslHud-height;
+  }
+
+  .flip {
+    width: @checkYourself-customFormulaCarousel-flip-width;
+    height: @checkYourself-customFormulaCarousel-flip-height;
+    top: @checkYourself-customFormulaCarousel-flip-top;
+
+    .card {
+      .face {
+        line-height: @checkYourself-customFormulaCarousel-flip-card-face-line-height;
+      }
+
+      .front, .back {
+        background-color: @checkYourself-customFormulaCarousel-flip-card-front-back-background-color;
+        color: @checkYourself-customFormulaCarousel-flip-card-front-back-color;
+        display: @checkYourself-customFormulaCarousel-flip-card-front-back-display;
+        justify-content: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
+        align-items: @checkYourself-customFormulaCarousel-flip-card-front-back-justify-content;
+      }
+
+      .face.back {
+        font-size: @checkYourself-flipCard-flip-card-back-cursor-font-size;
+      }
+    }
   }
 }
