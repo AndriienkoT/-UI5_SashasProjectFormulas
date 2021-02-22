@@ -1,7 +1,7 @@
 @import "Main.less";
 @import "CheckYourself.less";
-@import "Class.less";
 @import "Chapter.less";
+@import "AboutWebsite.less";
 @import "variables.less";
 
                                                     /*background*/
@@ -36,12 +36,19 @@
 
 .customHeader.sapContrast.sapMText {
   color: @customHeader-sapMText-color;
+  font-weight: @customHeader-sapMText-font-weight;
 }
 
 .customHeader.sapContrast {
   .sapMText {
     color: @customHeader-sapMText-color;
+    font-weight: @customHeader-sapMText-font-weight;
   }
+}
+
+.customHeader.sapContrast.sapTntToolHeader.sapMTB, 
+.customHeader.sapTntToolHeader.sapMTB {
+  background-color: @customHeader-background-color;
 }
 
                                                     /*buttons*/
@@ -53,4 +60,26 @@
 .customGreenButton .sapMBtnInner {
   background-color: @customGreenButton-background-color;
   color: @customGreenButton-color;
+}
+
+                                                    /*buttons*/
+
+.customChapterSmartList{
+  .sapMFlexItem {
+    max-height: @smartList-item-max-height;
+  }
+}
+
+.customChapterSmartList {
+  .sapMLIB {
+  background-color: @smartList-background-color;
+  }
+}
+
+html.sap-desktop {
+  .customChapterSmartList {
+    .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus>.sapMCbBg {
+      outline: @smartList-item-outline;
+    }
+  }
 }
